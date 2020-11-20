@@ -2,7 +2,7 @@ package DW_Kim_JAVA_Study_BaekJoon;
 
 import java.util.*;
 
-
+//**백준에서 시간 초과 나옴**//
 /**
  * 작  성  자 : Kim Do Wan
  * 일       자 : 2020. 11. 13.
