@@ -25,7 +25,7 @@ public class Main_2089 {
         if (n == 0) {
             return;
         }
-        if (n%2 == 0) {
+        if (n % 2 == 0) {
             go(-(n/2));
             System.out.print(0);
         } else {

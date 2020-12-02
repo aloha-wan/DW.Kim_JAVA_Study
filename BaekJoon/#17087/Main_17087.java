@@ -20,23 +20,25 @@ import java.util.Scanner;
  * 
  **/
 public class Main_17087 {
+	
     static int gcd(int x, int y) {
         if (y == 0) {
         	return x;
         } else {
-        	return gcd(y, x%y);
+        	return gcd(y, x % y);
         }
     }
     
+    //수빈이와 각 동생과 거리차이의 최대공약수를 구하여 답을 찾아 낸다.
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int n = sc.nextInt();
-        int s = sc.nextInt();
+        int n = sc.nextInt();			// 동생 수
+        int s = sc.nextInt();			// 수빈이의 현재 점
         int[] a = new int[n];
         
-        for (int i=0; i<n; i++) {
-            int x = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            int x = sc.nextInt();		// 
             int diff = Math.abs(x-s);
             
             a[i] = diff;
@@ -44,7 +46,7 @@ public class Main_17087 {
         
         int ans = a[0];
         
-        for (int i=1; i<n; i++) {
+        for (int i = 1; i < n; i++) {
             ans = gcd(ans, a[i]);
         }
         
