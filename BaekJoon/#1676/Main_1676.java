@@ -19,15 +19,15 @@ import java.util.Scanner;
  **/
 public class Main_1676 {
 
+	// 2보다 5가 많을 수는 없기 때문에 5의 개수를 구해주면 0의 개수를 구할 수 있다.
     public static void main(String args[]) {
-    	
         Scanner sc = new Scanner(System.in);
         
         int n = sc.nextInt();
         int ans = 0;
         
-        for (int i=5; i<=n; i*=5) {
-            ans += n/i;
+        for (int i = 5; i <= n; i *= 5) {
+            ans += n / i;
         }
         
         System.out.println(ans);

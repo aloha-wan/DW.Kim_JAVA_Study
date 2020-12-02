@@ -36,12 +36,12 @@ public class Main_6588 {
         ArrayList<Integer> prime = new ArrayList<Integer>();
         check[0] = check[1] = true;
         
-        for (int i=2; i*i <= MAX; i++) {
+        for (int i = 2; i * i <= MAX; i++) {
             if (check[i] == true) {
                 continue;
             }
             prime.add(i);
-            for (int j=i+i; j<=MAX; j+=i) {
+            for (int j = i + i; j <= MAX; j += i) {
                 check[j] = true;
             }
         }
@@ -51,7 +51,7 @@ public class Main_6588 {
             if (n == 0) {
                 break;
             }
-            for (int i=1; i<prime.size(); i++) {
+            for (int i = 1; i < prime.size(); i++) {
                 int p = prime.get(i);
                 if (check[n - p] == false) {
                     System.out.println(n + " = " + p + " + " + (n-p));

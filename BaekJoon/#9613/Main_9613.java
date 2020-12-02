@@ -19,7 +19,8 @@ import java.util.Scanner;
  * 
  **/
 public class Main_9613 {
-
+	
+	//최대 공약수
     public static int gcd(int x, int y) {
         if (y == 0) {
             return x;
@@ -30,20 +31,20 @@ public class Main_9613 {
     
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+        int t = sc.nextInt();			// 몇번 테스트 할 지 수 입력
         
         while (t-- > 0) {
-            int n = sc.nextInt();
+            int n = sc.nextInt();		// 테스트 할 수의 개수 입력
             int[] a = new int[n];
             
-            for (int i=0; i<n; i++) {
-                a[i] = sc.nextInt();
+            for (int i = 0; i < n; i++) {
+                a[i] = sc.nextInt();	// 테스트 할 수 입력
             }
             
             long ans = 0;
             
-            for (int i=0; i<n-1; i++) {
-                for (int j=i+1; j<n; j++) {
+            for (int i = 0; i < n-1; i++) {
+                for (int j = i+1; j < n; j++) {
                     ans += gcd(a[i], a[j]);
                 }
             }

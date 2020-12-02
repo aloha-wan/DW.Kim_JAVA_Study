@@ -19,6 +19,10 @@ import java.util.Scanner;
  **/
 public class Main_2004 {
 
+	//1676 팩토리얼 0개의 개수를 구하는 것의 응용
+	// nCm = n! / {(n-m)! * m!}
+	// 이 경우는 2의 개수보다 5의 개수가 적을 수 도 있기 때문에 다 구해준다.
+	// 끝자리 0의 개수 = 분자의 0의 개수 - 분모 0의 개수
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         
@@ -26,23 +30,23 @@ public class Main_2004 {
         long m = sc.nextLong();
         long two = 0, five = 0;
         
-        for (long i=2; i<=n; i*=2) {
+        for (long i = 2; i <= n; i *= 2) {
             two += n/i;
         }
-        for (long i=2; i<=n-m; i*=2) {
+        for (long i = 2; i <= n-m; i *= 2) {
             two -= (n-m)/i;
         }
-        for (long i=2; i<=m; i*=2) {
+        for (long i = 2; i <= m; i *= 2) {
             two -= m/i;
         }
-        for (long i=5; i<=n; i*=5) {
+        for (long i = 5; i <= n; i *= 5) {
             five += n/i;
         }
-        for (long i=5; i<=n-m; i*=5) {
+        for (long i = 5; i <= n-m; i *= 5) {
             five -= (n-m)/i;
         }
-        for (long i=5; i<=m; i*=5) {
-            five -= m/i;
+        for (long i = 5; i <= m; i *= 5) {
+            five -= m / i;
         }
         
         System.out.println(Math.min(two,five));
