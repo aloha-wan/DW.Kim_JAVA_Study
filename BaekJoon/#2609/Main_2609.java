@@ -18,7 +18,10 @@ import java.util.Scanner;
  * 
  **/
 public class Main_2609 {
-
+	
+	//유클리드 호제법을 이용하는 방법
+	//a를 b로 나눈 나머지를 r이라고 했을때 GCD(a,b) = GCD(b,r)과 같다.
+	//r이 0이면 그 때 b가 최대 공약수 이다.
     public static int gcd(int x, int y) {
         if (y == 0) {
             return x;
@@ -30,12 +33,14 @@ public class Main_2609 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int g = gcd(a, b);
-        int l = a * b / g;
+        int a = sc.nextInt();	//입력 받을 수 1
+        int b = sc.nextInt();	//입력 받을 수 2
+        int g = gcd(a, b);		//최대공약수 구하기
         
-        System.out.println(g);
-        System.out.println(l);
+        //LCM(최소공배수) = a * b / 최대공약수
+        int l = a * b / g;		//최소공배수 구하기
+        
+        System.out.println(g);	//최대공약수
+        System.out.println(l);	//최소공배수
     }
 }

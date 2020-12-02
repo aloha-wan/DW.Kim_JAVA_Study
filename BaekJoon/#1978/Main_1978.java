@@ -26,7 +26,7 @@ public class Main_1978 {
             return true;
         }
         
-        for (int i=2; i*i <= x; i++) {
+        for (int i = 2; i*i <= x; i++) {
             if (x % i == 0) {
                 return false;
             }

@@ -22,21 +22,21 @@ public class Main_1929 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        boolean[] check = new boolean[m+1];
+        int m = sc.nextInt();	//작은수
+        int n = sc.nextInt();	//큰 수
+        boolean[] check = new boolean[n+1];
         check[0] = check[1] = true;
         
-        for (int i=2; i*i <= m; i++) {
+        for (int i = 2; i * i <= n; i++) {
             if (check[i] == true) {
                 continue;
             }
-            for (int j=i+i; j<=m; j+=i) {
+            for (int j = i + i; j <= n; j += i) {
                 check[j] = true;
             }
         }
         
-        for (int i=n; i<=m; i++) {
+        for (int i = m; i <= n; i++) {
             if (check[i] == false) {
                 System.out.println(i);
             }
