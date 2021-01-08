@@ -28,4 +28,11 @@ public class 짝수와홀수 {
         }
         return answer;
     }
+
+    // 아래는 테스트로 출력해 보기 위한 코드입니다.
+    public static void main(String[] args) {
+    	짝수와홀수 evenOrOdd = new 짝수와홀수();
+        System.out.println("결과 : " + evenOrOdd.solution(3));
+        System.out.println("결과 : " + evenOrOdd.solution(4));
+    }
 }

@@ -33,4 +33,10 @@ public class 약수의합 {
         }
         return answer;
     }
+    
+    // 아래는 테스트로 출력해 보기 위한 코드입니다.
+    public static void main(String[] args) {
+    	약수의합 c = new 약수의합();
+        System.out.println(c.solution(12));
+    }
 }

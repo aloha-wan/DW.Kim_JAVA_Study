@@ -29,4 +29,12 @@ public class 평균구하기 {
         
         return answer;
     }
+
+    // 아래는 테스트로 출력해 보기 위한 코드입니다.
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 4};
+        평균구하기 getMean = new 평균구하기();
+        // 아래는 테스트로 출력해 보기 위한 코드입니다.
+        System.out.println("평균값 : " + getMean.solution(arr));
+    }
 }

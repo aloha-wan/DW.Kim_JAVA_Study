@@ -40,6 +40,14 @@ public class 두정수사이의합 {
 		return answer;
 
 	}
+
+    // 아래는 테스트로 출력해 보기 위한 코드입니다.
+    public static void  main(String[] args){
+    	두정수사이의합 sum = new 두정수사이의합();
+        System.out.println("a가 3, b가 5인 경우 : " + sum.solution(3, 5));
+        System.out.println("a가 3, b가 3인 경우 : " + sum.solution(3, 3));
+        System.out.println("a가 5, b가 3인 경우 : " + sum.solution(5, 3));
+    }
 }
 
 /* 모범 답안 : 등차수열의 합 공식
