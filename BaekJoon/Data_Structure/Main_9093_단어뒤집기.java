@@ -1,6 +1,12 @@
 package Data_Structure;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
+import java.util.Stack;
 
 /**
  * 작  성  자 : Kim Do Wan
@@ -53,3 +59,31 @@ public class Main_9093_단어뒤집기 {
 	}
 	
 }
+
+
+/*
+ * 백준 풀이 참고
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        int t = Integer.parseInt(bf.readLine());
+        
+        while (t-- > 0) {
+            String str = bf.readLine() + "\n";
+            Stack<Character> s = new Stack<>();
+            
+            for (char ch : str.toCharArray()) {
+                if (ch == '\n' || ch == ' ') {
+                    while (!s.isEmpty()) {
+                        bw.write(s.pop());
+                    }
+                    bw.write(ch);
+                } else {
+                    s.push(ch);
+                }
+            }
+        }
+        bw.flush();
+    }
+ */
