@@ -1,3 +1,3 @@
-# JAVA Algorism Study 💻
+# 💻 JAVA Algorism Study 💻
 ## 🌱BaekJoon
 ## 🌱Programmer
