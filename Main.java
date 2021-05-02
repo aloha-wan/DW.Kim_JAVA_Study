@@ -1,11 +1,9 @@
-package Mathematics;
-
 /**
- * 작 성 자  : Kim Do Wan
- * 일    자 : 2021.
+ * 작 성 자 :
+ * 일    자 : 2021. 5. 2.
  * 문제 제목 :
  * 문제 번호 :
- * 문제 출처 : https://www.acmicpc.net/problem/
+ * 문제 출처 : https://www.acmicpc.net/problem/8393
  *
  * 문    제 :
  *
@@ -16,4 +14,5 @@ package Mathematics;
  *
  **/
 public class Main {
+
 }
